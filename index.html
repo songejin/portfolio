@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" href="master1.css">
+    <link rel="stylesheet" href="aos.css">
+  </head>
+  <body>
+    <header>
+      <ul>
+      <li class="menu1"><a href="index.html"><img src="main/logo.png" alt="logo"></a></li>
+      <li class="menu2"></li>
+      <li class="menu3"><a href="#mainabout"class="scroll"><img src="main/about.png" alt="logo"></a></li>
+      <li class="menu3"><a href="work.html"><img src="main/work.png" alt="logo"></a></li>
+      <li class="menu3"><a href="contact.html"><img src="main/contact.png" alt="logo"></a></li>
+      </ul>
+    </header>
+    <section>
+      <div class="index">
+        <div class="main">
+          <img src="main/hello.png"
+          data-aos="fade-up"
+          data-aos-duration="500" alt="">
+        </div>
+      </div>
+      <div id="mainabout"></div>
+      <div class="about0">
+        <div class="edit">
+          <img src="main/designer.png"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="500" alt="">
+        </div>
+        <div class="songejin">
+          <img src="main/songejin.png"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="500" alt="">
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="info">
+          <img src="main/aboutinfo.png"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="500" alt="">
+        </div>
+      </div>
+
+      <div class="interview">
+
+      </div>
+      <div class="fin">
+        <div class="copy">
+          <img src="main/copyright.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    <!---AOS스크립트--->
+      <script src="aos.js"></script>
+      <script>
+        AOS.init({
+          easing: 'ease-in-out-sine'
+        });
+        </script>
+        <!---AOS스크립트--->
+
+    <script>
+    jQuery(document).ready(function($) {
+
+        $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 50);
+        });
+      });
+    </script>
+  </body>
+</html>
